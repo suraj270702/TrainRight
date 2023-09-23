@@ -9,7 +9,7 @@
 }
 
 .nav-container{
-    background-color:  #FFE5E5;
+    background-color:  #f7f1f1;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -18,14 +18,15 @@
 
 .nav-container .logo {
     padding: 10px;
-    border: 1px solid orange;
+    
     cursor: pointer;
     border-radius: 5px;
     font-weight: 400;
+    font-size: 1.5rem;
 }
 
 .nav-container .logo:hover{
-   background: orange;
+   background: #eb3941;
    
 }
 
@@ -54,25 +55,22 @@
     left: 0;
     right: 0;
     bottom: -3px; /* Adjust the position of the underline as needed */
-    border-bottom: 2px solid orange; /* Define the underline style */
-    color: orange;
+    border-bottom: 2px solid #eb3941; /* Define the underline style */
+    color: #eb3941;
 }
 
 .button {
     padding: 10px;
-    border-radius: 5px;
-    border: 1px solid orange;
-    background-color:  #FFE5E5;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+    
     font-size: 1.3rem;
     overflow: hidden;
+    cursor: pointer;
 
 }
 
-.button:hover{
-    background: orange;
-    border: 0;
-    
-}
+
 
 .checkBtn {
     display: none;
@@ -83,6 +81,44 @@
 }
 
 
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #f7f1f1;
+}
+
+.main .main-left{
+    width: 50%;
+    margin-left: 50px;
+}
+
+.main .main-right{
+    width: 50%;
+}
+
+.main .main-left h1{
+    font-size: 80px;
+}
+
+.main-left p{
+    margin: 50px 0;
+    font-size: 20px;
+}
+
+.main-left button{
+    background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 1.1rem;
+    margin-left: 15px;
+}
+
+.main-right img {
+    width: 600px;
+    height: 600px;
+    
+}
 
 
 
@@ -93,11 +129,12 @@
 
 
 
-@media screen and (max-width:805px) {
+
+@media screen and (max-width:768px) {
     .list {
         width: 100%;
         gap: 30px;
-        background-color: #FFE5E5;
+        background-color: #f7f1f1;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -125,4 +162,34 @@
         display: none;
     }
 
+
+    .main {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center-align text */
+    }
+
+    .main .main-left, .main .main-right {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .main .main-left h1 {
+        font-size: 30px; /* Reduced font size for h1 on mobile */
+        margin-right: 0; /* Remove margin for mobile */
+    }
+
+    .main-left p {
+        margin: 15px 0; /* Reduced margin for mobile */
+        font-size: 12px; /* Reduced font size for paragraphs on mobile */
+    }
+
+    .main-left button {
+        margin: 10px 0;
+        font-size: 0.8rem; /* Reduced font size for button on mobile */
+    }
+
+    .main-right img {
+        width: 300px; /* Reduced width on mobile */
+        height: 300px; /* Reduced height on mobile */
+    }
 }
