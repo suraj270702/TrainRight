@@ -112,6 +112,7 @@
     padding: 15px;
     font-size: 1.1rem;
     margin-left: 15px;
+    cursor: pointer;
 }
 
 .main-right img {
@@ -120,6 +121,69 @@
     
 }
 
+.choose-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.choose-container .information h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.choose-container .information p{
+    font-size: 20px;
+    margin-top: 20px;
+    color: gray;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.cards .card img {
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    margin-left: 70px;
+    
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 260px; /* Adjust this width to your needs */
+    background-color:  #f7f1f1;
+    border-radius: 15px;
+    margin-right: 40px;
+    padding: 20px;
+     /* Add margin-right to create space between cards */
+}
+
+
+.card h3{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.card p{
+    font-size: 15px;
+    margin-top: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgb(88, 87, 87);
+}
 
 
 
