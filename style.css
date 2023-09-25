@@ -185,6 +185,52 @@
     color: rgb(88, 87, 87);
 }
 
+.exercise-container {
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+    padding: 60px;
+    background-color: #f7f1f1;
+}
+
+.exercise-content,.exercise-image{
+    width: 40%;
+}
+
+.exercise-content {
+    margin-top: -80px;
+}
+
+.exercise-content h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.exercise-content p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: gray;
+    margin-top: 30px;
+}
+
+.exercise-content button {
+
+    background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 1.1rem;
+    
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+
+.exercise-image img{
+    border: 1px solid red;
+}
 
 
 
@@ -192,9 +238,7 @@
 
 
 
-
-
-@media screen and (max-width:768px) {
+@media screen and (max-width:850px) {
     .list {
         width: 100%;
         gap: 30px;
@@ -207,7 +251,7 @@
         left: 100%;
         transition: all 1s;
     }
-
+   
     
 
     #check {
@@ -230,6 +274,15 @@
     .main {
         flex-direction: column; /* Stack elements vertically */
         text-align: center; /* Center-align text */
+    }
+
+    .main-left button{
+        background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+        border-radius: 20px;
+        padding: 10px;
+        font-size: 0.7rem;
+        margin-left: 10px;
+        cursor: pointer;
     }
 
     .main .main-left, .main .main-right {
@@ -255,5 +308,84 @@
     .main-right img {
         width: 300px; /* Reduced width on mobile */
         height: 300px; /* Reduced height on mobile */
+        display: none;
+    }
+
+    .choose-container .information h1{
+        font-size: 25px;
+        text-align: center;
+        font-weight: 600;
+    }
+    
+
+    .choose-container .information p{
+        font-size: 12px;
+        margin-top: 20px;
+        
+        line-height: 20px;
+        font-weight: 400;
+        color: gray;
+    }
+
+    .card{
+        margin-top: 15px;
+        margin-left: 40px;
+        width: 300px;
+    }
+
+    .card p{
+        color: gray;
+        margin-left: 20px;
+        
+    }
+
+    .cards .card img {
+        margin-left: 80px;
+    }
+    
+    .cards {
+        margin-top: 20px;
+    }
+
+    .exercise-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .exercise-content, .exercise-image {
+        width: 100%;
+    }
+
+    .exercise-content {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .exercise-content h1 {
+        font-size: 30px;
+    }
+
+    .exercise-content button {
+
+        background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+        border-radius: 20px;
+        padding: 10px;
+        font-size: 0.8rem;
+        
+        cursor: pointer;
+        margin-top: 15px;
+    
+    }
+
+    .exercise-content p {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .exercise-image img {
+        max-width: 100%; /* Set the maximum width to 100% of the parent container */
+        height: auto; /* Maintain the aspect ratio */
+        margin-top: 20px;
     }
 }
