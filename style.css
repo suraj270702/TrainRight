@@ -239,6 +239,7 @@
     align-items: center;
     flex-direction: column;
     margin-top: 40px;
+    padding-bottom: 20px;
     background-color: #f7f1f1;
 }
 
@@ -316,6 +317,96 @@
     height: 38px;
     margin-right: 20px;
  }
+
+ .plans-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    background-color: #f7f1f1;
+}
+
+.plans-title h3 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.plans {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px; /* Adjust the spacing as needed */
+    margin-top: 40px;
+    max-width: 800px;
+}
+
+.plans span {
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+    text-align: center; /* Center the plan names */
+}
+
+hr {
+    margin-top: 20px;
+}
+
+.pricing-container {
+    display: flex;
+    align-items: flex-start; /* Align pricing cards to the top of the container */
+    gap: 40px; /* Adjust the spacing between pricing cards */
+    margin-top: 20px; /* Adjust the margin as needed */
+    max-width: 800px;
+}
+
+.pricing {
+    width: 200px;
+    text-align: center; /* Center the content within pricing cards */
+}
+
+.pricing span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pricing-card {
+    width: 200px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #efecec;
+    transition: all ease 0.3s;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.pricing-card:hover{
+    transform: scale(1.050);
+}
+
+.pricing-card h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.pricing-card p{
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.pricing-card button{
+    
+    background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
 
  @keyframes hover-animation {
     0% { transform: scale(1); } /* Initial state */
@@ -498,5 +589,37 @@
 
     .exercise-card a {
         font-size: 16px; /* Reduce font size for links on mobile */
+    }
+
+    .plans-title h3 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    .plans {
+        flex-direction: column; /* Stack plan names and pricing cards vertically on smaller screens */
+        text-align: center;
+        display: none; /* Center the plan names */
+    }
+
+    .pricing{
+        display: none;
+    }
+
+    .plans span {
+        font-size: 16px;
+        width: auto; /* Allow plan names to expand based on content */
+    }
+
+    .pricing-container {
+        flex-direction: column; /* Stack pricing cards vertically on smaller screens */
+        align-items: center; /* Center the pricing cards horizontally */
+    }
+
+    .pricing-card {
+        width: auto; /* Allow pricing cards to expand based on content */
+        text-align: center; /* Center the content within pricing cards */
+        margin-bottom: 30px; /* Increase spacing between pricing cards on smaller screens */
     }
 }
