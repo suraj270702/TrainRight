@@ -402,11 +402,73 @@ hr {
     background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
     border-radius: 20px;
     padding: 10px;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
     cursor: pointer;
     margin-top: 20px;
 }
+
+.trainers-container{
+    margin-top: 40px;
+    display: flex;
+    background-color: #f7f1f1;
+    flex-direction: column;
+}
+
+.trainers-title h1 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.trainers{
+    display: flex;
+    justify-content: space-around;
+    
+    margin-top: 30px;
+}
+
+.trainer{
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    transition: all ease 0.2s;
+    cursor: pointer;
+    
+}
+
+.trainer:hover{
+    transform: scale(1.05);
+}
+
+.trainer-img img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    
+
+}
+
+.trainer h3{
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.trainer button {
+    background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
 
  @keyframes hover-animation {
     0% { transform: scale(1); } /* Initial state */
@@ -620,6 +682,39 @@ hr {
     .pricing-card {
         width: auto; /* Allow pricing cards to expand based on content */
         text-align: center; /* Center the content within pricing cards */
-        margin-bottom: 30px; /* Increase spacing between pricing cards on smaller screens */
+        margin-bottom: 30px;
+        box-shadow: none; /* Increase spacing between pricing cards on smaller screens */
+    }
+
+    .trainers {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column; /* Stack trainer cards vertically */
+        align-items: center; /* Center-align trainer cards */
+    }
+
+    .trainer {
+        width: 80%; /* Adjust card width for better mobile fit */
+        margin: 10px auto; /* Center-align trainer cards horizontally */
+        box-shadow: none;
+    }
+
+    .trainer-img img {
+        max-width: 100%; /* Adjust image width to fit within the card */
+        height: auto;
+    }
+
+    .trainers-title h1 {
+        font-size: 30px; /* Reduce title font size */
+    }
+
+    .trainer h3 {
+        font-size: 20px; /* Reduce heading font size */
+    }
+
+    .trainer button {
+        padding: 10px;
+        font-size: 12px;
+        margin-top: 10px;
     }
 }
