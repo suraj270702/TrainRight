@@ -413,6 +413,7 @@ hr {
     display: flex;
     background-color: #f7f1f1;
     flex-direction: column;
+    padding-bottom: 40px;
 }
 
 .trainers-title h1 {
@@ -466,6 +467,79 @@ hr {
     font-weight: bold;
     cursor: pointer;
     margin-top: 20px;
+}
+
+.ratings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+   
+}
+
+.ratings-container{
+    width: 700px;
+    background-color: #f7f1f1;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ratings-container h1{
+    margin-bottom: -80px;
+    font-size: 35px;
+    font-weight: 600;
+
+}
+
+.ratings-container .rating {
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.rating:hover{
+    transform: scale(1.050);
+}
+.stars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stars img {
+    height: 12px;
+    width: 12px;
+}
+
+.content p{
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.reviewer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.reviewer h3{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.reviewer span{
+    font-size: 10px;
+    font-weight: 400;
 }
 
 
@@ -716,5 +790,60 @@ hr {
         padding: 10px;
         font-size: 12px;
         margin-top: 10px;
+    }
+     
+    .ratings{
+        background-color: #f7f1f1;
+    }
+    .ratings h1{
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .ratings-container {
+        flex-direction: column; /* Align cards vertically */
+        height: auto; /* Let cards expand to fit content */
+        width: 90%; /* Adjust width as needed */
+        
+    }
+
+    .ratings-container h1 {
+        margin-bottom: 20px; /* Adjust margin as needed */
+        font-size: 25px; /* Decrease font size for h1 */
+    }
+
+    .ratings-container .rating {
+        width: 100%; /* Make cards full-width */
+        height: auto; /* Let cards expand to fit content */
+        padding: 20px; /* Adjust padding as needed */
+        margin-bottom: 20px; /* Add space between cards */
+        font-size: 18px; /* Decrease font size for cards */
+        box-shadow: none;
+    }
+     
+    .stars {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        flex-direction: row; /* Keep stars in a row */
+        margin-top: 10px; /* Add space between stars and content */
+    }
+
+    .stars img {
+        height: 10px; /* Decrease star size */
+        width: 10px; /* Decrease star size */
+    }
+
+    .content p {
+        font-size: 14px; /* Decrease font size for content */
+    }
+
+    .reviewer h3 {
+        font-size: 14px; /* Decrease font size for reviewer name */
+    }
+
+    .reviewer span {
+        font-size: 12px; /* Decrease font size for reviewer description */
     }
 }
